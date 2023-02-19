@@ -1,7 +1,8 @@
 
 
-public class AddedWageCalculationTilMaxHoursOrMaxDays {
-    public static void main(String args[])
+public class EmployeeWageCalculationUsingClassMethod {
+
+    public static void calculateTotalWage()
     {
         final int PART_TIME = 1;
         final int FULL_TIME = 2;
@@ -35,5 +36,10 @@ public class AddedWageCalculationTilMaxHoursOrMaxDays {
 
         }
         System.out.println("Total wage for a month is " + totalWage);
+    }
+
+    public static void main(String args[])
+    {
+        calculateTotalWage();
     }
 }
