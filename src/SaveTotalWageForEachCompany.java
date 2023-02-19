@@ -1,5 +1,5 @@
 
-public class EmployeeWageComputation {
+public class SaveTotalWageForEachCompany {
     // class constants
     static final int PART_TIME = 1;
     static final int FULL_TIME = 2;
@@ -11,7 +11,7 @@ public class EmployeeWageComputation {
     // instance variable
     int totalWage;
 
-    EmployeeWageComputation(String companyName, int wagePerHr, int maxWorkingDays, int maxWorkingHrs)
+    SaveTotalWageForEachCompany(String companyName, int wagePerHr, int maxWorkingDays, int maxWorkingHrs)
     {
         COMPANY_NAME = companyName;
         WAGE_PER_HR = wagePerHr;
@@ -68,8 +68,8 @@ public class EmployeeWageComputation {
 
     public static void main(String args[])
     {
-        EmployeeWageComputation google = new EmployeeWageComputation("Google", 8, 20, 100);
-        EmployeeWageComputation microsoft = new EmployeeWageComputation("Microsoft", 4, 30, 150);
+        SaveTotalWageForEachCompany google = new SaveTotalWageForEachCompany("Google", 8, 20, 100);
+        SaveTotalWageForEachCompany microsoft = new SaveTotalWageForEachCompany("Microsoft", 4, 30, 150);
 
         google.calculateTotalWage();
         System.out.println(google);
@@ -77,5 +77,4 @@ public class EmployeeWageComputation {
         microsoft.calculateTotalWage();
         System.out.println(microsoft);
     }
-
 }
